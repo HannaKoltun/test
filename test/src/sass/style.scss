@@ -1,0 +1,352 @@
+body {
+    margin: 0 auto;
+    background-color: rgb(106, 106, 106);
+}
+
+.container {
+    width: auto;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .title {
+        color: #22284a;
+        width: 490.39px;
+        height: 28px;
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        margin-right: 750px;
+    }
+
+    .button {
+        width: 220px;
+        height: 48px;
+        background: linear-gradient(180deg, #5DC416 0%, #367B05 100%);
+        border: 3px solid #95FF4BA3;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px 0px #3D93007A;
+        box-shadow: 0px 0px 0px 4px #5BC0143D;
+        margin-top: 70px;
+        margin-left: 550px;
+
+
+        .containerButton {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .iconDone {
+                width: 20px;
+                height: 20px;
+                margin-left: 7px;
+            }
+
+            .titleDone {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: center;
+                color: white;
+                margin-left: 19px;
+            }
+        }
+
+    }
+
+    .button:hover {
+        background: linear-gradient(180deg, #58BD11 0%, #45940E 100%);
+        border: 4px solid #95FF4BA3;
+        box-shadow: 0px 4px 8px 0px #3D93007A;
+        box-shadow: 0px 0px 0px 6px #5BC0143D;
+        margin-right: 2px;
+    }
+
+    .button:active {
+        background: linear-gradient(360deg, #51A814 0%, #368300 100%);
+        border: 2px solid #95FF4B7A;
+        box-shadow: 0px 4px 8px 0px #3D93007A;
+        box-shadow: 0px 0px 0px 4px #5BC0143D;
+    }
+
+    .button:active .containerButton {
+        margin-left: 1px;
+    }
+
+
+
+
+
+    .tranparentContainer {
+        width: 1281px;
+        height: 366px;
+        border: double 5px transparent;
+        border-radius: 20px;
+        background-image: linear-gradient(#ced6ff, #5951ca, #5951ca, #2920A5),
+            linear-gradient(to bottom, #c8ceed, #475FDF);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: 0px 24px 48px 0px #172B97B8;
+
+
+        .containerBlue {
+            width: 419px;
+            height: 352px;
+            border: double 2px transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(#6377E1, #2920A5),
+                linear-gradient(to bottom, #96a6f7, #475FDF);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            position: relative;
+
+
+            .arrow {
+                position: absolute;
+                top: 80px;
+                right: -50px;
+            }
+
+
+            .imageBlue {
+                margin-top: 10px;
+            }
+
+
+            .number {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+
+        }
+
+        .containerBlue:hover {
+            border: double 6px transparent;
+        }
+
+        .containerViolet {
+            width: 419px;
+            height: 352px;
+            border: double 2px transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(180deg, #E163E1, #741595),
+                linear-gradient(to bottom, #f18ff1, #B247DF);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+
+            .arrow {
+                display: none;
+            }
+
+            .number {
+                margin-top: 20px;
+                margin-left: 20px;
+            }
+
+        }
+
+        .containerViolet:hover {
+            border: double 6px transparent;
+        }
+
+        .containerGreen {
+            position: relative;
+            width: 419px;
+            height: 352px;
+            border: double 2px transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(#55CE00, #014D1D),
+                linear-gradient(to bottom, #9adf69, #3A8207);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+
+            .arrow {
+                position: absolute;
+                top: 80px;
+                left: -50px;
+            }
+
+            .containerForFlex {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .number {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                }
+
+                .description {
+                    width: 299px;
+                    height: 48px;
+                    font-family: Roboto;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: white;
+                    margin-top: 20px;
+                    margin-left: 15px;
+                }
+            }
+
+            .imageGreen {
+                margin-top: 10px;
+            }
+
+
+
+        }
+
+        .containerGreen:hover {
+            border: double 6px transparent;
+        }
+
+    }
+
+}
+
+
+@media screen and (max-width:1290px) {
+
+    .container {
+        width: 360px;
+        height: 1360;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 100px;
+
+        .title {
+            width: 332px;
+            height: 64px;
+            margin-bottom: 50px;
+            margin-right: 0;
+            margin-top: 20px;
+        }
+
+
+        .tranparentContainer {
+            width: 335px;
+            height: 1070px;
+            border: double 2px transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(#ced6ff, #5951ca, #5951ca, #2920A5),
+                linear-gradient(to bottom, #c8ceed, #475FDF);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 24px 48px 0px #172B97B8;
+
+
+            .containerBlue {
+                width: 328px;
+                height: 345px;
+                position: relative;
+
+                .arrow {
+                    display: none;
+                }
+
+                .imageBlue {
+                    position: absolute;
+                    margin-top: 0px;
+                    left: -40px;
+                }
+
+            }
+
+            .containerBlue:hover {
+                border: double 4px transparent;
+            }
+
+            .containerViolet {
+                width: 328px;
+                height: 345px;
+                position: relative;
+
+                .arrow {
+                    display: inline;
+                    width: 75px;
+                    position: absolute;
+                    top: -14px;
+                    left: 277px;
+                    transform: scale(-1, 1) rotate3d(0, 0, 1, 90deg);
+                }
+
+                .imageViolet {
+                    position: absolute;
+                    margin-top: 0px;
+                    left: -40px;
+                }
+
+            }
+
+            .containerViolet:hover {
+                border: double 4px transparent;
+            }
+
+            .containerGreen {
+                width: 328px;
+                height: 345px;
+                position: relative;
+
+                .arrow {
+                    width: 75px;
+                    position: absolute;
+                    top: -14px;
+                    left: 277px;
+                    transform: scale(-1, 1) rotate3d(0, 0, 1, 90deg);
+                }
+
+                .containerForFlex {
+
+                    .description {
+                        width: 190px;
+                        height: 48px;
+                        font-family: Roboto;
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: white;
+                        margin-top: 20px;
+                        margin-left: 15px;
+                    }
+                }
+
+                .imageGreen {
+                    position: absolute;
+                    margin-top: 0px;
+                    left: -40px;
+                }
+            }
+
+            .containerGreen:hover {
+                border: double 4px transparent;
+            }
+
+        }
+
+
+        .button {
+            width: 220px;
+            height: 48px;
+            margin-left: 0px;
+        }
+
+    }
+
+
+
+}
